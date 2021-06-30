@@ -1,0 +1,16 @@
+---
+application:
+  name: "ghost"
+  project: "uuu"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "images"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/images"
+routers:
+- name: "main-ghost"
+  routes:
+  - application_name: "ghost"
+    paths:
+    - "/*"
